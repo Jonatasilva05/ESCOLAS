@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+/*ALL*/
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/*Imagem de fundo*/
+body {
+    font-family: 'Lora', sans-serif;
+    background: #FEFAE0 url('../IMG/background.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/*COMEÇO DO CABEÇARIO DA PÁGINA*/
+
+/*Imagem de fundo*/
+.bg-dark{
+    box-shadow: 0px -1px 63px rgb(0,143,0);
+}
+
+/*Imagem da logo*/
+.navbar-brand img {
+    padding: 0px;
+    height: 70px;
+    width: 120px;
+    border-radius: 30px;
+}
+
+/*Linha debaixo dos botão/MENU*/
+.botao:hover {
+    transition-duration: 0.25s;
+    background-color: #606C38;
+}
+
+/*Botões do Menu*/
+.nav-link {
+    position: relative;
+    color: #fff;
+    text-decoration: none;  
+}
+
+/*Linha debaixo do botão*/
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+}
+
+/*Linha debaixo dos botões*/
+.nav-link:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+
+/*FINAL DO CABECARIO DA PÁGINA*/
+
+/*COMEÇO DO MEIO DA PÁGINA*/
+
+/*corpo da pagina*/
+.interface{
+  width: auto;
+  padding: 30px;
+  margin: 40px 50px 40px 50px;
+  box-shadow: 0px 0px 10px rgb(0, 0, 0);
+  background-color: #fff;
+}
+
+/*Imagem das redes sociais*/
+.img-logo img{
+    width: 40px;
+}
+
+/*FINAL DO MEIO DA PÁGINA*/
+
+/*COMEÇO DO RODAPE DA PÁGINA*/
+
+/*Rodapé da Página*/
+footer{
+    background-color: #363636;
+    box-shadow: 0px -9px 50px rgb(0,127,40);
+}
+
+/*Imagem d rodape*/
+.logo-footer img{
+    padding: 0px;
+    height: 170px;
+    width: 210px;
+    border-radius: 18px;
+    margin: -10px;
+}
+
+.col-md-6 img {
+    height: 20px;
+}
+
+.col-md-6 a {
+    color: #00FF00;
+}
+
+.col-md-6 a:hover{
+    color: #FFD700;
+}
+
+.col-md-6 h5{
+    color: #00FF00; 
+}
+.col-md-6{
+    color: #fff;
+    grid-template-columns: repeat(3, 1fr);
+    display: inline-grid;
+    align-content: center;
+}
+    
+    
+/*Container do rodapé*/
+.container-footer {
+  color: #fff;
+  grid-template-columns: repeat(3, 1fr);
+  display: inline-grid;
+  align-content: center;
+  padding: 35px;
+}
+
+.container-footer h5:hover{
+    color:  #9ACD32;
+}
+
+/*FINAL DO RODAPE DA PÁGINA*/
